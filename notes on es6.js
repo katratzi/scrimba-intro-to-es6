@@ -154,3 +154,8 @@ console.log(data);
 // can even work with it...e.g.
 let updatedData = data;
 updatedData.push(5);
+
+// messing around with strings...
+// padStart and padEnd - will add if there is space
+let example = "Dylan";
+console.log(example.padEnd(10, "a")); // = Dylanaaaaa
