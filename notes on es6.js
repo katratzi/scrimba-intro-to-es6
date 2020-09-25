@@ -36,3 +36,24 @@ for (const income of incomes) {
   console.log(income);
   total += income;
 }
+
+// spread operator
+// easy way to copy contents of an array into another
+const contacts = ["Mary", "Joel", "Danny"];
+let personalFriends = ["David", ...contacts, "Lily"];
+contacts.push("John");
+
+console.log(personalFriends);
+
+// can also use it with objects too
+let person = {
+  name: "Adam",
+  age: 25,
+  city: "Manchester",
+};
+
+let employee = {
+  ...person, // spread here
+  salary: 50000,
+  position: "Software Developer",
+};
