@@ -142,3 +142,15 @@ console.log(example);
 const example = {};
 example.firstName = "Dylan";
 console.log(example);
+
+// export and import
+// in one file example js
+export const data = [1, 2, 3];
+// then import on other
+import { data } from "./example.js";
+
+console.log(data);
+
+// can even work with it...e.g.
+let updatedData = data;
+updatedData.push(5);
