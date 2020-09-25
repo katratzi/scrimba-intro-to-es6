@@ -98,3 +98,8 @@ const leadSinger = (artist = "someone") => {
 };
 
 leadSinger();
+
+// includes
+let numArray = [1, 2, 3, 4, 5];
+console.log(numArray.indexOf(0)); // == -1 so you know it's not there.  kind of wonky
+console.log(numArray.includes(0)); // use includes for true/false instead
