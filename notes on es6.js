@@ -27,3 +27,12 @@ function addressMaker(city, state) {
 }
 
 addressMaker("Austin", "Texas");
+
+// for of loop - like for each in c#
+// let incomes = [62000, 67000, 75000];
+let total = 0;
+
+for (const income of incomes) {
+  console.log(income);
+  total += income;
+}
