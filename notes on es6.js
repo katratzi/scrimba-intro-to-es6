@@ -103,3 +103,42 @@ leadSinger();
 let numArray = [1, 2, 3, 4, 5];
 console.log(numArray.indexOf(0)); // == -1 so you know it's not there.  kind of wonky
 console.log(numArray.includes(0)); // use includes for true/false instead
+
+// let and const
+
+// so problem is...this will print null because the example var is 'hoisted' up
+if (false) {
+  var example = 5;
+}
+
+console.log(example);
+
+// this is what the compiler sees
+/*
+var example;
+
+if (false) {
+  example = 5;
+}
+*/
+
+// by using let - we get block scope so we'll get an error undefined instead
+if (false) {
+  let example = 5;
+}
+console.log(example);
+
+/*
+if (false) {
+  let example = 5;
+}
+*/
+
+// const is interesting
+const example = 5;
+example = 10; // error because we're dealing with primitive types
+console.log(example);
+// hmm but we can do this..bit weird
+const example = {};
+example.firstName = "Dylan";
+console.log(example);
