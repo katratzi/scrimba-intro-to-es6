@@ -90,3 +90,11 @@ console.log(dinnerMenu("chicken salad"));
 
 // if we're just returning one value can omit the return and  brackets for neatness
 const dinnerMenu = (food) => `I'm going to eat a ${food} for dinner`;
+
+// default params - like in c# too
+// fallbacks to default value if no value is passed in
+const leadSinger = (artist = "someone") => {
+  console.log(`${artist} is the lead singer of Cold Play`);
+};
+
+leadSinger();
