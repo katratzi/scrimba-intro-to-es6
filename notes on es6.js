@@ -57,3 +57,11 @@ let employee = {
   salary: 50000,
   position: "Software Developer",
 };
+
+// rest operator
+// kind of like params
+function add(...nums) {
+  console.log(nums); // will print them all as 4,5,7 etc.  (not as array)
+}
+
+add(4, 5, 7, 8, 12);
