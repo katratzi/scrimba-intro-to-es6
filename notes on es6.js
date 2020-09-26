@@ -159,3 +159,15 @@ updatedData.push(5);
 // padStart and padEnd - will add if there is space
 let example = "Dylan";
 console.log(example.padEnd(10, "a")); // = Dylanaaaaa
+
+// sets
+const exampleSet = new Set([1, 1, 1, 1, 2, 2, 2, 2]); // this size is 2, as only 2 unique elements
+
+exampleSet.add(5);
+exampleSet.add(5).add(17); // add to sets and chain add
+// now the size is 4
+
+console.log(exampleSet.delete(5)); // delete return a bool if the element was found
+// and size is now 3 again...so we delete all 5's.
+exampleSet.has(5); // another bool call
+exampleSet.clear(); // and simply clear
