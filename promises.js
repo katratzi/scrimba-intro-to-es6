@@ -45,3 +45,15 @@ fetch("https://jsonplaceholder.typicode.com/comments", {
 })
   .then((response) => response.json())
   .then((data) => console.log(data));
+
+// solution to challenge
+const apiUrl = "https://api.chucknorris.io/jokes/random";
+
+async function getJoke() {
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+
+  console.log(data.value);
+}
+
+getJoke();
